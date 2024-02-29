@@ -13,9 +13,10 @@ html, body {
     font-size: 16px;
     line-height: 1.6;
 }
-.body{
+body {
     overflow-x: hidden;
-}
+}  
+  
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -1363,15 +1364,18 @@ Portfolio Section
 .portfolio {
     background: #646464;
 }
+
 .gallery-header {
     text-align: center;
     margin: 0 auto 48px;
 }
+
 .gallery-header ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .gallery-header ul li {
     margin: 0 1px 4px;
     padding: 12px 20px;
@@ -1385,11 +1389,13 @@ Portfolio Section
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 .gallery-header ul li.active {
     background: #dd7d23;
 }
-.gallery-item{
-    display:none
+
+.gallery-item {
+    display: none;
 }
 .gallery-item a {
     position: relative;
@@ -1436,11 +1442,11 @@ Portfolio Section
 }
 
 .gallery-item:hover .gallery-item-thumb img {
-    transform: scale(1.2);
     transform: scale(1.1);
     transition: all 9s cubic-bezier(.1,.2,7,1);
 }
-.gallery-content{
+
+.gallery-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1449,7 +1455,7 @@ Portfolio Section
     width: 100%;
     color: #fff;
     transform: translateY(80px);
-    transition: opacity .65s cubic-bezier(.05,.2,.1,1),transform .65s cubic-bezier(.05,.2,.1,1);
+    transition: opacity .65s cubic-bezier(.05,.2,.1,1), transform .65s cubic-bezier(.05,.2,.1,1);
 }
 
 .gallery-content .gallery-heading .gallery-category {
@@ -1479,7 +1485,24 @@ Portfolio Section
 .gallery-item .gallery-content .gallery-des p{
     margin: 0;
     padding: 0;
+} 
+
+/* Adicione isso ao seu arquivo de estilo CSS */
+
+@media (max-width: 767px) {
+    .gallery-title {
+        font-size: 1.5rem; /* Ajuste conforme necessário para telas menores */
+    }
+
+    .gallery-content {
+        transform: translateY(0); /* Ajuste conforme necessário para evitar texto na vertical */
+    }
+
+    .gallery-item .gallery-content {
+        transform: translateY(0); /* Ajuste conforme necessário para evitar texto na vertical */
+    }
 }
+
 /*===========================================================
 Blog Section
 ============================================================*/
