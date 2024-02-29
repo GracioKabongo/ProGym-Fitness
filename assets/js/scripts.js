@@ -81,12 +81,12 @@ jQuery(document).ready(function () {
     margin: 0,
     items: 1,
     dots: false,
-    nav: true,
+    nav: false, 
     navText: [
       "<i class='fa fa-chevron-left'></i>",
       "<i class='fa fa-chevron-right'></i>",
     ],
-    mouseDrag: false,
+     
     autoplay: true,
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
