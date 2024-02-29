@@ -201,6 +201,8 @@ $(document).ready(function() {
   }
 });
 
+
+
 function openMap(latitude, longitude) {
   // Abre o mapa do Google Maps usando a API
   window.open(`https://www.google.com/maps?q=${latitude},${longitude}`, '_blank');
@@ -213,3 +215,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Restaurar o scroll horizontal (se necessário)
   // document.body.style.overflowX = 'auto';
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('gesturestart', function(e) {
+      e.preventDefault();
+  });
+});
+ 
