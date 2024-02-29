@@ -205,3 +205,11 @@ function openMap(latitude, longitude) {
   // Abre o mapa do Google Maps usando a API
   window.open(`https://www.google.com/maps?q=${latitude},${longitude}`, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Bloquear o scroll horizontal
+  document.body.style.overflowX = 'hidden';
+
+  // Restaurar o scroll horizontal (se necessário)
+  // document.body.style.overflowX = 'auto';
+});
